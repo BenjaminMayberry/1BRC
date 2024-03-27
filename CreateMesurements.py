@@ -444,7 +444,7 @@ class CreateMeasurement:
 
     def generate_measurement_file(
             self,
-            file_name: str = "measurements.txt",
+            file_name: str = "Data\measurements.txt",
             records: int = 1_000_000_000,
             sep: str = ";",
             std_dev: float = 10,
@@ -489,8 +489,8 @@ if __name__ == "__main__":
         "--output",
         dest="output",
         type=str,
-        help='Measurement file name (default is "measurements.txt")',
-        default="measurements.txt",
+        help='Measurement file name (default is "Data\measurements.txt")',
+        default="Data\measurements.txt",
     )
     parser.add_argument(
         "-r",
